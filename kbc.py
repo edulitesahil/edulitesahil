@@ -4,7 +4,7 @@ import random
 name=input("Enter Your Name ")
 print("Nice to meet you:",name)
 print("Let us Then Start the Game \n The Questions will be based on Indian History")
-
+asked=[]
 def Question(a):
     match a:
        case 1:
@@ -72,7 +72,7 @@ def Question(a):
              print("You Have Entered the wrong Answer\n the Correct Answer is Nirvana ")
           case 4:
               print("You Have Entered the wrong Answer\n the Correct Answer is Nirvana ")
-       case 5:
+       case 6:
         print("The theory of economic drain of India during British imperialism was propounded by")
         print("1. Jawaharlal Nehru \n 2. Dadabhai Naoroji \n 3. R.C. Dutt \n 4. M.K. Gandhi")
         k= int(input("Enter The Correct Option "))
@@ -85,7 +85,7 @@ def Question(a):
             print("You Have Entered the wrong Answer\n The Correct Answer is Dadabhai Naroji")
           case 4:
             print("You Have Entered the wrong Answer\n The Correct Answer is Dadabhai Naroji") 
-       case 6:  
+       case 7:  
         print("The treaty of Srirangapatna was signed between Tipu Sultan and")
         print("1. Robert Clive \n 2. Cornwallis \n 3. Dalhousie \n 4. Warren Hastings")
         k= int(input("Enter The Correct Option "))
@@ -98,7 +98,7 @@ def Question(a):
             print("You Have Entered the wrong Answer\n The Correct Answer is Cornwallis")
           case 4:
             print("You Have Entered the wrong Answer\n The Correct Answer is Cornwallis") 
-       case 7:
+       case 8:
         print("The system of competitive examination for civil service was accepted in principle in the year")         
         print("1. 1833 \n 2. 1853 \n 3. 1858 \n 4. 1882")
         k= int(input("Enter The Correct Option "))
@@ -111,22 +111,47 @@ def Question(a):
             print("You Have Entered the wrong Answer\n The Correct Answer is 1853")
           case 4:
             print("You Have Entered the wrong Answer\n The Correct Answer is 1853")
+       case 9:
+        print("Through which one of the following, the king exercised his control over villages in the Vijayanagar Empire?")
+        print("1. Dannayaka \n 2. Sumanta \n 3. Nayaka \n 4. Mahanayakacharya")
+        k= int(input("Enter The Correct Option "))
+        match k:
+          case 1:
+           print("You Have Entered the wrong Answer\n The Correct Answer is Mahanayakacharya")
+          case 2:
+           print("You Have Entered the wrong Answer\n The Correct Answer is Mahanayakacharya")
+          case 3:
+           print("You Have Entered the wrong Answer\n The Correct Answer is Mahanayakacharya")
+          case 4:
+           print("You Have Entered The Correct Answer") 
+       case 10:
+        print("The Vijayanagara ruler, Kirshnadev Raya's work Amuktamalyada, was in")
+        print("1. Telugu \n 2. Sanskrit \n 3. Tamil \n 4. Kannada ")
+        k= int(input("Enter The Correct Option "))
+        match k:
+          case 1: 
+             print("You Have Entered the correct Answer")
+          case 2:
+             print("You Have Entered the wrong Answer\n the Correct Answer is Telugu ")
+          case 3:
+             print("You Have Entered the wrong Answer\n the Correct Answer is Telugu ")
+          case 4:
+              print("You Have Entered the wrong Answer\n the Correct Answer is Telugu ")       
+for i in range(1,11):
+    
+    while True:
+     n = random.randint(1, 10)
+     asked.append(n)
+     Question(n)
+    if not asked.count(n)>1:
+        break
+
+    # Update the condition as needed
+    condition = False
 
 
+    
 
-      
-
-
-
-
-
- 
-
-
-                 
-for i in range(1,18):
-  #  n = random.randint(1, 10)
-  n= int(input("Enter The Correct Option "))
-  Question(n)
+    
      
      
